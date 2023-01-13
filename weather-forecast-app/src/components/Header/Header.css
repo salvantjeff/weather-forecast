@@ -1,0 +1,46 @@
+.header {
+    background-color: rgb(22, 224, 255);
+    padding: .5rem 1rem;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: .25rem;
+    font-size: .875rem;
+}
+
+.search-bar {
+    font-size: inherit;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.search-form {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    min-width: 230px;
+    max-width: 600px;
+    flex-grow: 1;
+}
+
+.toggle-temp-button {
+    background-color: rgba(0, 140, 255, 0.5);
+    padding: 5px 10px;
+    border-radius: 1rem;
+    cursor: pointer;
+}
