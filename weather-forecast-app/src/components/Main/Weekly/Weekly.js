@@ -1,4 +1,3 @@
-import CloudSVG from '../../../img/CloudSVG';
 import './Weekly.css';
 import { BsFillCloudSunFill, BsFillSunFill } from 'react-icons/bs';
 
