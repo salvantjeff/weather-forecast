@@ -3,6 +3,8 @@
     background-color: #fff;
     border-radius: .6rem;
     font-size: .875rem;
+    max-width: 625px;
+    overflow-x: auto;
 }
 
 .hourly-title {
@@ -16,8 +18,6 @@
     grid-template-columns: 1fr;
     grid-auto-flow: column;
     gap: .5rem;
-    justify-content: start;
-    overflow-x: auto;
 }
 
 .hourly-extra-info {

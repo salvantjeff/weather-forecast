@@ -13,7 +13,7 @@ function Main() {
             </div>
             <Today />
             <Weekly />
-            {/* <Hourly /> */}
+            <Hourly />
         </main>
     );
 };
