@@ -2,3 +2,10 @@
     background-color: rgb(197, 255, 184);
     padding: .25rem 1rem;
 }
+
+.location-content {
+    display: flex;
+    gap: .5rem;
+    padding: 1rem 0;
+    font-weight: 500;
+}
