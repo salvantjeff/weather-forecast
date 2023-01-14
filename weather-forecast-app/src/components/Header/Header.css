@@ -3,6 +3,11 @@
     padding: .5rem 1rem;
 }
 
+.header-wrapper {
+    max-width: 1000px;
+    margin: auto;
+}
+
 .header-top {
     display: flex;
     align-items: center;
