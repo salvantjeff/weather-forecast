@@ -4,6 +4,7 @@
     font-size: .875rem;
     overflow-x: auto;
     max-width: 625px;
+    height: 300px;
 }
 
 .weekday-extra-info-wrapper {
@@ -55,5 +56,14 @@
     .weekly-section {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
+        overflow: auto;
+    }
+
+    .weekday-extra-info-wrapper {
+        display: flex;
+        gap: .5rem;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 0 .25rem;
     }
 }
