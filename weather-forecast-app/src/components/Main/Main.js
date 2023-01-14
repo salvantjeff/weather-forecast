@@ -1,6 +1,7 @@
 import './Main.css';
 import Today from './Today/Today';
 import { GoLocation } from 'react-icons/go';
+import Weekly from './Weekly/Weekly';
 
 function Main() {
     return (
@@ -10,6 +11,7 @@ function Main() {
                 <GoLocation />
             </div>
             <Today />
+            <Weekly />
         </main>
     );
 };
