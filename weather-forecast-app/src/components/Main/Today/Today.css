@@ -6,6 +6,7 @@
     font-size: .875rem;
     gap: 1rem;
     overflow-x: auto;
+    max-width: 625px;
 }
 
 .today-heading-title {
