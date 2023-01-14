@@ -11,9 +11,11 @@ function Main() {
                 <p>Richmond, VA</p>
                 <GoLocation />
             </div>
-            <Today />
-            <Weekly />
-            <Hourly />
+            <div className='main-content'>
+                <Today />
+                <Weekly />
+                <Hourly />
+            </div>
         </main>
     );
 };
