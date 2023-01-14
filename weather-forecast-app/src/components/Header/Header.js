@@ -5,7 +5,6 @@ import { BsSearch } from 'react-icons/bs';
 function Header() {
     return (
         <header className="header">
-            <div className='header-wrapper'>
             <div className="header-top">
                 <div className="header-icon">
                     <CloudSVG />
@@ -24,7 +23,6 @@ function Header() {
                     </div>
                 </form>
                 <div className="toggle-temp-button">toggle</div>
-            </div>
             </div>
         </header>
     );
