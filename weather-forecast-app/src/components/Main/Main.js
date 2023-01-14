@@ -12,8 +12,8 @@ function Main() {
                 <GoLocation />
             </div>
             <Today />
-            {/* <Weekly />
-            <Hourly /> */}
+            <Weekly />
+            {/* <Hourly /> */}
         </main>
     );
 };

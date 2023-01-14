@@ -4,11 +4,13 @@
     border-radius: .6rem;
     font-size: .875rem;
     overflow-x: auto;
+    max-width: 625px;
 }
 
 .weekday-extra-info-wrapper {
     display: flex;
     gap: .5rem;
+    justify-content: space-between;
 }
 
 .weekly-title {
