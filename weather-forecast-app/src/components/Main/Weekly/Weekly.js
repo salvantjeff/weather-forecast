@@ -1,7 +1,7 @@
 import './Weekly.css';
-import { BsFillCloudSunFill, BsFillSunFill } from 'react-icons/bs';
 import initWeatherData from '../../../data/initWeatherData';
 import { kelvinToCelsius, kelvinToFahrenheit } from '../../../helper/convert';
+import WeatherIcons from '../../../data/WeatherIcons';
 
 function Weekly({ weatherData }) {
     let daily = initWeatherData.daily;
@@ -22,7 +22,9 @@ function Weekly({ weatherData }) {
                         <div key={day.id} className='weekday-extra-info'>
                             <p className='weekday-date'>{day.date}</p>
                             <div className='weekday-details'>
-                                <div className='weekday-weather-icon'><BsFillCloudSunFill size='2rem'/></div>
+                                <div className='weekday-weather-icon'>
+                                    <img src={WeatherIcons[day.description]} alt="weather icon" />
+                                </div>
                                 <div className='weekday-extremes'>
                                     <div className='weekday-high'>{Math.round(conversionFunc(day.temp_high))}°</div>
                                     <div className='weekday-low'>{Math.round(conversionFunc(day.temp_low))}°</div>
