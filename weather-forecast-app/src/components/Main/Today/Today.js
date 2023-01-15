@@ -56,8 +56,12 @@ function Today({ weatherData }) {
             </div>
             <div className='today-extra-info-wrapper'>
                 <div className='today-extra-info'>
-                    <p className='today-extra-info-title'>Air Quality</p>
-                    <p className='today-extra-info-value'>21</p>
+                    <p className='today-extra-info-title'>Sunrise</p>
+                    <p className='today-extra-info-value'>{today.sunrise}</p>
+                </div>
+                <div className='today-extra-info'>
+                    <p className='today-extra-info-title'>Sunset</p>
+                    <p className='today-extra-info-value'>{today.sunset}</p>
                 </div>
                 <div className='today-extra-info'>
                     <p className='today-extra-info-title'>Wind</p>
@@ -74,10 +78,6 @@ function Today({ weatherData }) {
                 <div className='today-extra-info'>
                     <p className='today-extra-info-title'>Pressure</p>
                     <p className='today-extra-info-value'>{(today.pressure * 0.0145).toFixed(2)} in</p>
-                </div>
-                <div className='today-extra-info'>
-                    <p className='today-extra-info-title'>Dew Point</p>
-                    <p className='today-extra-info-value'>36°</p>
                 </div>
             </div>
         </div>
