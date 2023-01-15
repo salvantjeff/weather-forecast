@@ -13,7 +13,7 @@ function Main({ weatherData }) {
             </div>
             <div className='main-content'>
                 <Today weatherData={weatherData} />
-                <Weekly />
+                <Weekly weatherData={weatherData}/>
                 <Hourly />
             </div>
         </main>

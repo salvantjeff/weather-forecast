@@ -1,7 +1,12 @@
 import './Weekly.css';
 import { BsFillCloudSunFill, BsFillSunFill } from 'react-icons/bs';
+import initWeatherData from '../../../data/initWeatherData';
 
-function Weekly() {
+function Weekly({ weatherData }) {
+    let daily = initWeatherData.daily;
+    if (weatherData) {
+        daily = {...weatherData.daily};
+    };
     return (
         <div className='weekly-section'>
             <div className='weekly-title'>

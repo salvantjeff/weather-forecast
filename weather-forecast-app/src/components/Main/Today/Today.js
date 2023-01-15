@@ -2,25 +2,10 @@ import './Today.css';
 import CloudSVG from '../../../img/CloudSVG';
 import removeSeconds from '../../../helper/removeSeconds';
 import { kelvinToCelsius, kelvinToFahrenheit } from '../../../helper/convert';
-
-const initWeatherData =  {
-    wind: 0,
-    description: '',
-    main_weather: '',
-    visibility: '',
-    country: '',
-    feels_like: 273.15,
-    humidity: 0,
-    pressure: 0,
-    temp: 273.15,
-    temp_max: 273.15,
-    temp_min: 0,
-    city: '',
-    date: '',
-};
+import initWeatherData from '../../../data/initWeatherData';
 
 function Today({ weatherData }) {
-    let today = initWeatherData;
+    let today = initWeatherData.today;
     if (weatherData.today) {
         today = {...weatherData.today};
     };
@@ -32,7 +17,7 @@ function Today({ weatherData }) {
     const todayTempUnit = 'F';
     // const conversionFunc = toCelsius ? kelvinToCelsius : kelvinToFahrenheit;
     const conversionFunc = kelvinToFahrenheit;
-    console.log('====>', weatherData.today);
+    // console.log('====>', weatherData.today);
     return (
         <div className='today-section'>
             <div className='today-heading'>
