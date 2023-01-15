@@ -1,7 +1,7 @@
 import './Today.css';
 import CloudSVG from '../../../img/CloudSVG';
 import removeSeconds from '../../../helper/removeSeconds';
-
+import { kelvinToCelsius, kelvinToFahrenheit } from '../../../helper/convert';
 const initWeatherData =  {
     wind: 0,
     description: '',
@@ -24,12 +24,6 @@ function Today({ weatherData }) {
         today = {...weatherData.today};
     };
 
-    function kelvinToFahrenheit(number) {
-        return Math.round((number - 273.15) * (9/5) + 32);
-    };
-    function kelvinToCelsius(number) {
-        return Math.round(number - 273.15);
-    };
     //if toCelsius is true then use celsius formula
     // const todayTemp = toCelsius ? kelvinToCelsius(today.temp) : kelvinToFahrenheit(today.temp);
     // const todayTempUnit = toCelsius ? 'C' : 'F';
