@@ -7,7 +7,7 @@ function Weekly({ weatherData }) {
     if (weatherData.daily) {
         daily = [...weatherData.daily];
     };
-    console.log('DAILY: ', daily);
+    
     return (
         <div className='weekly-section'>
             <div className='weekly-title'>
@@ -28,47 +28,6 @@ function Weekly({ weatherData }) {
                         </div>  
                     );
                 })}
-               
-                {/* <div className='weekday-extra-info'>
-                    <p className='weekday-date'>Sat 14</p>
-                    <div className='weekday-details'>
-                        <div className='weekday-weather-icon'><BsFillSunFill size='2rem'/></div>
-                        <div className='weekday-extremes'>
-                            <div className='weekday-high'>41°</div>
-                            <div className='weekday-low'>28°</div>
-                        </div>
-                    </div>
-                </div>       
-                <div className='weekday-extra-info'>
-                    <p className='weekday-date'>Sat 14</p>
-                    <div className='weekday-details'>
-                        <div className='weekday-weather-icon'><BsFillSunFill size='2rem'/></div>
-                        <div className='weekday-extremes'>
-                            <div className='weekday-high'>41°</div>
-                            <div className='weekday-low'>28°</div>
-                        </div>
-                    </div>
-                </div>  
-                <div className='weekday-extra-info'>
-                    <p className='weekday-date'>Sat 14</p>
-                    <div className='weekday-details'>
-                        <div className='weekday-weather-icon'><BsFillSunFill size='2rem'/></div>
-                        <div className='weekday-extremes'>
-                            <div className='weekday-high'>41°</div>
-                            <div className='weekday-low'>28°</div>
-                        </div>
-                    </div>
-                </div>  
-                <div className='weekday-extra-info'>
-                    <p className='weekday-date'>Sat 14</p>
-                    <div className='weekday-details'>
-                        <div className='weekday-weather-icon'><BsFillSunFill size='2rem'/></div>
-                        <div className='weekday-extremes'>
-                            <div className='weekday-high'>41°</div>
-                            <div className='weekday-low'>28°</div>
-                        </div>
-                    </div>
-                </div>       */}
             </div>
         </div>
     );
