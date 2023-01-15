@@ -5,7 +5,7 @@ import Weekly from './Weekly/Weekly';
 import Hourly from './Hourly/Hourly';
 import initWeatherData from '../../data/initWeatherData';
 
-function Main({ weatherData }) {
+function Main({ weatherData, toCelsius }) {
     let today = initWeatherData.today;
     if (weatherData.today) {
         today = {...weatherData.today};
@@ -18,9 +18,18 @@ function Main({ weatherData }) {
                 <GoLocation />
             </div>
             <div className='main-content'>
-                <Today weatherData={weatherData} />
-                <Weekly weatherData={weatherData}/>
-                <Hourly weatherData={weatherData}/>
+                <Today 
+                    weatherData={weatherData} 
+                    toCelsius={toCelsius} 
+                />
+                <Weekly 
+                    weatherData={weatherData}
+                    toCelsius={toCelsius} 
+                />
+                <Hourly 
+                    weatherData={weatherData}
+                    toCelsius={toCelsius} 
+                />
             </div>
         </main>
     );

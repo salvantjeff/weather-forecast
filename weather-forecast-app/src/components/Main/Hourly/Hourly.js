@@ -5,14 +5,14 @@ import initWeatherData from '../../../data/initWeatherData';
 import { kelvinToFahrenheit, kelvinToCelsius } from '../../../helper/convert';
 import WeatherIcons from '../../../data/WeatherIcons';
 
-function Hourly({ weatherData }) {
+function Hourly({ weatherData, toCelsius }) {
     let hourly = initWeatherData.hourly;
     if (weatherData.hourly) {
         hourly = [...weatherData.hourly];
     };
 
-    // const conversionFunc = toCelsius ? kelvinToCelsius : kelvinToFahrenheit;
-    const conversionFunc = kelvinToFahrenheit;
+    const conversionFunc = toCelsius ? kelvinToCelsius : kelvinToFahrenheit;
+
     return (
         <div className='hourly-section'>
             <div className='hourly-title'>
