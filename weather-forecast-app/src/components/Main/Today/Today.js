@@ -3,6 +3,7 @@ import CloudSVG from '../../../img/CloudSVG';
 import removeSeconds from '../../../helper/removeSeconds';
 import { kelvinToCelsius, kelvinToFahrenheit } from '../../../helper/convert';
 import initWeatherData from '../../../data/initWeatherData';
+import WeatherIcons from '../../../data/WeatherIcons';
 
 function Today({ weatherData }) {
     let today = initWeatherData.today;
@@ -18,6 +19,8 @@ function Today({ weatherData }) {
     // const conversionFunc = toCelsius ? kelvinToCelsius : kelvinToFahrenheit;
     const conversionFunc = kelvinToFahrenheit;
     // console.log('====>', weatherData.today);
+
+    console.log('Weather icons: ', WeatherIcons);
     return (
         <div className='today-section'>
             <div className='today-heading'>
@@ -26,7 +29,9 @@ function Today({ weatherData }) {
             </div>
             <div className='today-main-details'>
                 <div className='today-main-temp'>
-                    <div className='today-weather-icon'><CloudSVG /></div>
+                    <div className='today-weather-icon'>
+                        <img src={WeatherIcons[today.description]} alt="weather icon" />
+                    </div>
                     <div className='today-main-temp__details'>
                         <p className='today-main-temp-value'>{conversionFunc(today.temp)}</p>
                         <span className="today-temp-unit">°{todayTempUnit}</span>
