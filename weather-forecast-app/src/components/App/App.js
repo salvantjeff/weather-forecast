@@ -4,6 +4,7 @@ import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
 import { useEffect, useState } from 'react';
 import OpenWeatherData from '../../data/OpenWeatherData';
+import removeSeconds from '../../helper/removeSeconds';
 
 function App() {
   const [weatherData, setWeatherData] = useState({});
@@ -39,6 +40,8 @@ function App() {
             temp_min: data.main.temp_min,
             city: data.name,
             date: new Date(data.dt * 1000).toDateString(),
+            sunrise: removeSeconds(new Date(data.sys.sunrise * 1000).toLocaleTimeString()),
+            sunset: removeSeconds(new Date(data.sys.sunset * 1000).toLocaleTimeString()),
           },
           daily: OpenWeatherData.daily.map(currDay => {
             return {
