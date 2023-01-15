@@ -91,12 +91,27 @@ function App() {
     setToCelsius(!toCelsius);
   };
 
+  const [searchContent, setSearchContent] = useState({
+    search: '',
+    id: 'search-bar'
+  });
+
+  function handleSearchOnChange(e) {
+    const newSearchContent = {
+      ...searchContent,
+      search: e.target.value,
+    };
+    setSearchContent(newSearchContent);
+  };
+
   return (
     <div className="App">
       <div className="content-wrapper">
         <Header 
           toCelsius={toCelsius} 
           toggleUnit={toggleUnit}
+          searchContent={searchContent}
+          onChange={handleSearchOnChange}
         />
         <Main 
             toCelsius={toCelsius} 

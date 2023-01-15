@@ -2,7 +2,12 @@ import CloudSVG from '../../img/CloudSVG';
 import './Header.css';
 import { BsSearch } from 'react-icons/bs';
 
-function Header({ toCelsius, toggleUnit }) {
+function Header({ 
+    toCelsius, 
+    toggleUnit, 
+    searchContent, 
+    onChange 
+}) {
 
     return (
         <header className="header">
@@ -18,6 +23,8 @@ function Header({ toCelsius, toggleUnit }) {
                         type="text"
                         className="search-bar"
                         placeholder='Search for location'
+                        value={searchContent.search}
+                        onChange={onChange}
                     />
                     <div className="search-icon">
                         <BsSearch />
