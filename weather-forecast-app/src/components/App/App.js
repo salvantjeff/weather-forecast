@@ -60,7 +60,7 @@ function App() {
             };
           })
         };
-
+          
         function formatAMPM(hours) {
           var ampm = hours >= 12 ? 'PM' : 'AM';
           hours = hours % 12;
@@ -79,12 +79,12 @@ function App() {
     getWeatherData('richmond')
   }, []);
   console.log('Data to use: ',weatherData);
-  
+
   return (
     <div className="App">
       <div className="content-wrapper">
         <Header />
-        <Main />
+        <Main weatherData={weatherData} />
         <Footer />
       </div>
     </div>

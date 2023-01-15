@@ -7,6 +7,7 @@
     gap: 1rem;
     overflow-x: auto;
     max-width: 625px;
+    min-height: 263px;
 }
 
 .today-heading-title {
@@ -51,6 +52,7 @@
 
 .today-main-description-heading {
     font-weight: 600;
+    text-transform: capitalize;
 }
 
 .today-main-temp-value {

@@ -1,50 +1,92 @@
 import './Today.css';
 import CloudSVG from '../../../img/CloudSVG';
 
-function Today() {
+const initWeatherData =  {
+    wind: 0,
+    description: '',
+    main_weather: '',
+    visibility: '',
+    country: '',
+    feels_like: 273.15,
+    humidity: 0,
+    pressure: 0,
+    temp: 273.15,
+    temp_max: 273.15,
+    temp_min: 0,
+    city: '',
+    date: '',
+};
+
+function Today({ weatherData }) {
+    let today = initWeatherData;
+    if (weatherData.today) {
+        today = {...weatherData.today};
+    };
+
+    function removeSeconds(string) {
+        const taboo = {4:4, 5:5, 6:6}
+        const splitted = string.split('');
+        const filtered = splitted.filter((curr, i) => !(i in taboo));
+        const joined = filtered.join('');
+        return joined;
+    };
+
+    function kelvinToFahrenheit(number) {
+        return Math.round((number - 273.15) * (9/5) + 32);
+    };
+    function kelvinToCelsius(number) {
+        return Math.round(number - 273.15);
+    };
+    //if toCelsius is true then use celsius formula
+    // const todayTemp = toCelsius ? kelvinToCelsius(today.temp) : kelvinToFahrenheit(today.temp);
+    // const todayTempUnit = toCelsius ? 'C' : 'F';
+    const todayTemp = kelvinToFahrenheit(today.temp);
+    const todayTempUnit = 'F';
+    // const conversionFunc = toCelsius ? kelvinToCelsius : kelvinToFahrenheit;
+    const conversionFunc = kelvinToFahrenheit;
+    console.log('====>', weatherData.today);
     return (
         <div className='today-section'>
             <div className='today-heading'>
                 <p className='today-heading-title'>Current Weather</p>
-                <p className='today-heading-time'>2:10 PM</p>
+                <p className='today-heading-time'>{removeSeconds(new Date().toLocaleTimeString())}</p>
             </div>
             <div className='today-main-details'>
                 <div className='today-main-temp'>
                     <div className='today-weather-icon'><CloudSVG /></div>
                     <div className='today-main-temp__details'>
-                        <p className='today-main-temp-value'>55</p>
-                        <span className="today-temp-unit">°F</span>
+                        <p className='today-main-temp-value'>{conversionFunc(today.temp)}</p>
+                        <span className="today-temp-unit">°{todayTempUnit}</span>
                     </div>
                 </div>
                 <div className='today-main-description'>
-                    <p className='today-main-description-heading'>Mostly Sunny</p>
-                    <p className='today-main-description-sub-heading'>Feels like 52°</p>
+                    <p className='today-main-description-heading'>{today.description}</p>
+                    <p className='today-main-description-sub-heading'>Feels like {conversionFunc(today.feels_like)}°</p>
                 </div>
             </div>
             <div className='today-main-summary'>
-                <p>There will be mostly sunny skies. The high will be 55°.</p>
+                <p>There will be {today.description} skies. The high will be {conversionFunc(today.temp_max)}°.</p>
             </div>
             <div className='today-extra-info-wrapper'>
-                {/* create an obj with content and map out to specific section */}
                 <div className='today-extra-info'>
                     <p className='today-extra-info-title'>Air Quality</p>
                     <p className='today-extra-info-value'>21</p>
                 </div>
                 <div className='today-extra-info'>
                     <p className='today-extra-info-title'>Wind</p>
-                    <p className='today-extra-info-value'>6 mph</p>
+                    <p className='today-extra-info-value'>{(today.wind).toFixed(2)} mph</p>
                 </div>
                 <div className='today-extra-info'>
                     <p className='today-extra-info-title'>Humidity</p>
-                    <p className='today-extra-info-value'>54%</p>
+                    <p className='today-extra-info-value'>{today.humidity}%</p>
                 </div>
                 <div className='today-extra-info'>
                     <p className='today-extra-info-title'>Visibility</p>
-                    <p className='today-extra-info-value'>9.9 mi</p>
+                    <p className='today-extra-info-value'>{(today.visibility * 0.00062137).toFixed(2)} mi</p>
                 </div>
                 <div className='today-extra-info'>
                     <p className='today-extra-info-title'>Pressure</p>
-                    <p className='today-extra-info-value'>89.76 in</p>
+                    <p className='today-extra-info-value'>{(today.pressure * 0.0145).toFixed(2)} in</p>
                 </div>
                 <div className='today-extra-info'>
                     <p className='today-extra-info-title'>Dew Point</p>

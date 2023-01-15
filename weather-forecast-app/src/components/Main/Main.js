@@ -4,7 +4,7 @@ import { GoLocation } from 'react-icons/go';
 import Weekly from './Weekly/Weekly';
 import Hourly from './Hourly/Hourly';
 
-function Main() {
+function Main({ weatherData }) {
     return (
         <main className='main-section'>
             <div className='location-content'>
@@ -12,7 +12,7 @@ function Main() {
                 <GoLocation />
             </div>
             <div className='main-content'>
-                <Today />
+                <Today weatherData={weatherData} />
                 <Weekly />
                 <Hourly />
             </div>
