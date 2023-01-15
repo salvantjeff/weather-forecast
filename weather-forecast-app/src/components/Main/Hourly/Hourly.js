@@ -9,7 +9,7 @@ function Hourly({ weatherData }) {
     if (weatherData.hourly) {
         hourly = [...weatherData.hourly];
     };
-    console.log('HOURLY: ', hourly);
+    
     // const conversionFunc = toCelsius ? kelvinToCelsius : kelvinToFahrenheit;
     const conversionFunc = kelvinToFahrenheit;
     return (
@@ -40,114 +40,6 @@ function Hourly({ weatherData }) {
                         </div>  
                     );
                 })}
-                {/* <div className='hourly-extra-info'>
-                    <div className='hourly-extra-info-primary'>
-                        <div className='hourly-weather-icon'><BsFillCloudSnowFill size='2rem'/></div>
-                        <div className='hourly-temp'>5°</div>
-                        <div className='hourly-temp-description'>Cloudy</div>
-                    </div>
-                    <div className='hourly-extra-info-secondary'>
-                        <div className='hourly-humidity'>
-                            <WiHumidity />
-                            <p>64%</p>
-                        </div>
-                        <div className='hourly-wind'>
-                            <BsWind/>
-                            <p>12 km/h</p>
-                        </div>
-                    </div>
-                    <div className='hourly-time'>9 PM</div>
-                </div>  
-                <div className='hourly-extra-info'>
-                    <div className='hourly-extra-info-primary'>
-                        <div className='hourly-weather-icon'><BsFillCloudSnowFill size='2rem'/></div>
-                        <div className='hourly-temp'>5°</div>
-                        <div className='hourly-temp-description'>Cloudy</div>
-                    </div>
-                    <div className='hourly-extra-info-secondary'>
-                        <div className='hourly-humidity'>
-                            <WiHumidity />
-                            <p>64%</p>
-                        </div>
-                        <div className='hourly-wind'>
-                            <BsWind/>
-                            <p>12 km/h</p>
-                        </div>
-                    </div>
-                    <div className='hourly-time'>9 PM</div>
-                </div> 
-                <div className='hourly-extra-info'>
-                    <div className='hourly-extra-info-primary'>
-                        <div className='hourly-weather-icon'><BsFillCloudSnowFill size='2rem'/></div>
-                        <div className='hourly-temp'>5°</div>
-                        <div className='hourly-temp-description'>Cloudy</div>
-                    </div>
-                    <div className='hourly-extra-info-secondary'>
-                        <div className='hourly-humidity'>
-                            <WiHumidity />
-                            <p>64%</p>
-                        </div>
-                        <div className='hourly-wind'>
-                            <BsWind/>
-                            <p>12 km/h</p>
-                        </div>
-                    </div>
-                    <div className='hourly-time'>9 PM</div>
-                </div> 
-                <div className='hourly-extra-info'>
-                    <div className='hourly-extra-info-primary'>
-                        <div className='hourly-weather-icon'><BsFillCloudSnowFill size='2rem'/></div>
-                        <div className='hourly-temp'>5°</div>
-                        <div className='hourly-temp-description'>Cloudy</div>
-                    </div>
-                    <div className='hourly-extra-info-secondary'>
-                        <div className='hourly-humidity'>
-                            <WiHumidity />
-                            <p>64%</p>
-                        </div>
-                        <div className='hourly-wind'>
-                            <BsWind/>
-                            <p>12 km/h</p>
-                        </div>
-                    </div>
-                    <div className='hourly-time'>9 PM</div>
-                </div> 
-                <div className='hourly-extra-info'>
-                    <div className='hourly-extra-info-primary'>
-                        <div className='hourly-weather-icon'><BsFillCloudSnowFill size='2rem'/></div>
-                        <div className='hourly-temp'>5°</div>
-                        <div className='hourly-temp-description'>Cloudy</div>
-                    </div>
-                    <div className='hourly-extra-info-secondary'>
-                        <div className='hourly-humidity'>
-                            <WiHumidity />
-                            <p>64%</p>
-                        </div>
-                        <div className='hourly-wind'>
-                            <BsWind/>
-                            <p>12 km/h</p>
-                        </div>
-                    </div>
-                    <div className='hourly-time'>9 PM</div>
-                </div> 
-                <div className='hourly-extra-info'>
-                    <div className='hourly-extra-info-primary'>
-                        <div className='hourly-weather-icon'><BsFillCloudSnowFill size='2rem'/></div>
-                        <div className='hourly-temp'>5°</div>
-                        <div className='hourly-temp-description'>Cloudy</div>
-                    </div>
-                    <div className='hourly-extra-info-secondary'>
-                        <div className='hourly-humidity'>
-                            <WiHumidity />
-                            <p>64%</p>
-                        </div>
-                        <div className='hourly-wind'>
-                            <BsWind/>
-                            <p>12 km/h</p>
-                        </div>
-                    </div>
-                    <div className='hourly-time'>9 PM</div>
-                </div>  */}
             </div>
         </div>
     );
