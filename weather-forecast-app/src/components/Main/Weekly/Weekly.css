@@ -25,6 +25,7 @@
     display: grid;
     gap: .5rem;
     border-radius: .6rem;
+    min-width: 100px;
 }
 
 .weekday-details {

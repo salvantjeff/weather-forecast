@@ -9,8 +9,8 @@ function Weekly({ weatherData, toCelsius }) {
         daily = [...weatherData.daily];
     };
 
-    // const conversionFunc = toCelsius ? kelvinToCelsius : kelvinToFahrenheit;
-    const conversionFunc = kelvinToFahrenheit;
+    const conversionFunc = toCelsius ? kelvinToCelsius : kelvinToFahrenheit;
+
     return (
         <div className='weekly-section'>
             <div className='weekly-title'>
