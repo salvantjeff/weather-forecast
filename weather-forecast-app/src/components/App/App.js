@@ -25,6 +25,7 @@ function App() {
       // const OpenWeatherData = await completeRes.json();
       // Note to self: currently using an earlier copy of OpenWeatherData to save api calls
       // just swap them when ready to make calls;
+      document.body.classList.remove('activeErrorDropdown');
       const dataProcessed = {
         today: {
           wind: data.wind.speed,
@@ -79,6 +80,7 @@ function App() {
       setWeatherData(dataProcessed);
     } catch (error) {
       console.log(error);
+      document.body.classList.add('activeErrorDropdown');
     };
   };
   useEffect(() => {
