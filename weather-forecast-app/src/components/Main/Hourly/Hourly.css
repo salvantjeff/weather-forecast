@@ -23,6 +23,7 @@
 
 .hourly-extra-info {
     display: grid;
+    grid-auto-rows: 1fr auto 40px;
     gap: 1rem;
     border-radius: .6rem;
     background-color: rgb(255, 190, 121);
