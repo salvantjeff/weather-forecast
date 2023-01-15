@@ -6,7 +6,8 @@ function Header({
     toCelsius, 
     toggleUnit, 
     searchContent, 
-    onChange 
+    onChange,
+    handleSearchSubmit
 }) {
 
     return (
@@ -18,7 +19,7 @@ function Header({
                 <h1>Weather Forecast</h1>
             </div>
             <div className="header-bottom">
-                <form className="search-form">
+                <form onSubmit={handleSearchSubmit} className="search-form">
                     <input 
                         type="text"
                         className="search-bar"
