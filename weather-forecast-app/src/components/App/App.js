@@ -86,10 +86,18 @@ function App() {
   }, []);
   console.log('Data to use: ',weatherData);
 
+  const [toCelsius, setToCelsius] = useState(false);
+  function toggleUnit(e) {
+    setToCelsius(!toCelsius);
+  };
+
   return (
     <div className="App">
       <div className="content-wrapper">
-        <Header />
+        <Header 
+          toCelsius={toCelsius} 
+          toggleUnit={toggleUnit}
+        />
         <Main weatherData={weatherData} />
         <Footer />
       </div>

@@ -2,7 +2,8 @@ import CloudSVG from '../../img/CloudSVG';
 import './Header.css';
 import { BsSearch } from 'react-icons/bs';
 
-function Header() {
+function Header({ toCelsius, toggleUnit }) {
+
     return (
         <header className="header">
             <div className="header-top">
@@ -22,7 +23,10 @@ function Header() {
                         <BsSearch />
                     </div>
                 </form>
-                <div className="toggle-temp-button">toggle</div>
+                <div 
+                    onClick={toggleUnit}
+                    className="toggle-temp-button"
+                >Unit: {toCelsius ? '°C' : '°F'}</div>
             </div>
         </header>
     );
