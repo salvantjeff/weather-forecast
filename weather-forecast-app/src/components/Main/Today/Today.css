@@ -87,3 +87,7 @@
 .today-extra-info-value {
     font-weight: 600;
 }
+
+.main-des {
+    text-transform: lowercase;
+}

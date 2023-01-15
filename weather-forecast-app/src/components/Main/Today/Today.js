@@ -53,7 +53,7 @@ function Today({ weatherData }) {
                 </div>
             </div>
             <div className='today-main-summary'>
-                <p>There will be {today.description} skies. The high will be {conversionFunc(today.temp_max)}°.</p>
+                <p>There will be <span className='main-des'>{today.main_weather}</span> skies. The high will be {conversionFunc(today.temp_max)}°.</p>
             </div>
             <div className='today-extra-info-wrapper'>
                 <div className='today-extra-info'>
