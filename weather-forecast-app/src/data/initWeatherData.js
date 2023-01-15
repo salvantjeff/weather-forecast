@@ -1,16 +1,16 @@
 const initWeatherData = {
     "today": {
-        "wind": 4.63,
+        "wind": 6.17,
         "description": "clear sky",
         "main_weather": "Clear",
         "visibility": 10000,
         "country": "US",
-        "feels_like": 266.74,
-        "humidity": 67,
-        "pressure": 1020,
-        "temp": 271.77,
-        "temp_max": 272.77,
-        "temp_min": 270.79,
+        "feels_like": 267.02,
+        "humidity": 63,
+        "pressure": 1021,
+        "temp": 272.68,
+        "temp_max": 273.84,
+        "temp_min": 271.47,
         "city": "Richmond",
         "date": "Sun Jan 15 2023",
         "sunrise": "7:23 AM",
@@ -22,56 +22,64 @@ const initWeatherData = {
             "temp_high": 276.29,
             "temp_low": 272.78,
             "description": "broken clouds",
-            "main_weather": "Clouds"
+            "main_weather": "Clouds",
+            "id": "Sat Jan 14"
         },
         {
             "date": "Sun Jan 15",
             "temp_high": 280.64,
             "temp_low": 271.98,
             "description": "clear sky",
-            "main_weather": "Clear"
+            "main_weather": "Clear",
+            "id": "Sun Jan 15"
         },
         {
             "date": "Mon Jan 16",
             "temp_high": 284.23,
             "temp_low": 272.96,
             "description": "scattered clouds",
-            "main_weather": "Clouds"
+            "main_weather": "Clouds",
+            "id": "Mon Jan 16"
         },
         {
             "date": "Tue Jan 17",
             "temp_high": 286.54,
             "temp_low": 278,
             "description": "light rain",
-            "main_weather": "Rain"
+            "main_weather": "Rain",
+            "id": "Tue Jan 17"
         },
         {
             "date": "Wed Jan 18",
             "temp_high": 288.16,
             "temp_low": 281.53,
             "description": "overcast clouds",
-            "main_weather": "Clouds"
+            "main_weather": "Clouds",
+            "id": "Wed Jan 18"
         },
         {
             "date": "Thu Jan 19",
             "temp_high": 292.07,
             "temp_low": 281.67,
             "description": "moderate rain",
-            "main_weather": "Rain"
+            "main_weather": "Rain",
+            "id": "Thu Jan 19"
         },
         {
             "date": "Fri Jan 20",
             "temp_high": 287.59,
             "temp_low": 278.84,
             "description": "moderate rain",
-            "main_weather": "Rain"
+            "main_weather": "Rain",
+            "id": "Fri Jan 20"
         },
         {
             "date": "Sat Jan 21",
             "temp_high": 280.79,
             "temp_low": 275.92,
             "description": "overcast clouds",
-            "main_weather": "Clouds"
+            "main_weather": "Clouds",
+            "id": "Sat Jan 21"
         }
     ],
     "hourly": [

@@ -50,6 +50,7 @@ function App() {
               temp_low: currDay.temp.min,
               description: currDay.weather[0].description,
               main_weather: currDay.weather[0].main,
+              id: (new Date(currDay.dt * 1000).toDateString()).slice(0, -5)
             };
           }),
           hourly: OpenWeatherData.hourly.map(currHour => {
