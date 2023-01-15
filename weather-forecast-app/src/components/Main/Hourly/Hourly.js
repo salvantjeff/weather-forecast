@@ -3,13 +3,14 @@ import { BsFillCloudSnowFill, BsWind } from 'react-icons/bs';
 import { WiHumidity } from 'react-icons/wi';
 import initWeatherData from '../../../data/initWeatherData';
 import { kelvinToFahrenheit, kelvinToCelsius } from '../../../helper/convert';
+import WeatherIcons from '../../../data/WeatherIcons';
 
 function Hourly({ weatherData }) {
     let hourly = initWeatherData.hourly;
     if (weatherData.hourly) {
         hourly = [...weatherData.hourly];
     };
-    
+
     // const conversionFunc = toCelsius ? kelvinToCelsius : kelvinToFahrenheit;
     const conversionFunc = kelvinToFahrenheit;
     return (
@@ -22,7 +23,9 @@ function Hourly({ weatherData }) {
                     return (
                         <div key={hour.id} className='hourly-extra-info'>
                             <div className='hourly-extra-info-primary'>
-                                <div className='hourly-weather-icon'><BsFillCloudSnowFill size='2rem'/></div>
+                                <div className='hourly-weather-icon'>
+                                    <img src={WeatherIcons[hour.description]} alt="weather icon" />
+                                </div>
                                 <div className='hourly-temp'>{Math.round(conversionFunc(hour.temp))}°</div>
                                 <div className='hourly-temp-description'>{hour.description}</div>
                             </div>

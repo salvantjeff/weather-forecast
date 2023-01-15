@@ -81,3 +81,8 @@
 .hourly-temp-description {
     text-transform: capitalize;
 }
+
+.hourly-weather-icon {
+    width: 2.5rem;
+    width: 2.5rem;
+}
