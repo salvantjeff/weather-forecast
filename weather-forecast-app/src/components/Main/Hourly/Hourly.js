@@ -1,8 +1,15 @@
 import './Hourly.css';
 import { BsFillCloudSnowFill, BsWind } from 'react-icons/bs';
 import { WiHumidity } from 'react-icons/wi';
+import initWeatherData from '../../../data/initWeatherData';
 
-function Hourly() {
+function Hourly({ weatherData }) {
+    let hourly = initWeatherData.hourly;
+    if (weatherData.hourly) {
+        hourly = [...weatherData.hourly];
+    };
+    console.log('HOURLY: ', hourly);
+    
     return (
         <div className='hourly-section'>
             <div className='hourly-title'>
