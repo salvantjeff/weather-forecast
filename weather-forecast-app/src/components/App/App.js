@@ -5,6 +5,7 @@ import Footer from '../Footer/Footer';
 import { useEffect, useState } from 'react';
 import OpenWeatherData from '../../data/OpenWeatherData';
 import removeSeconds from '../../helper/removeSeconds';
+import { v4 as uuidv4 } from 'uuid';
 
 function App() {
   const [weatherData, setWeatherData] = useState({});
@@ -61,6 +62,7 @@ function App() {
               wind: currHour.wind_speed,
               description: currHour.weather[0].description,
               main_weather: currHour.weather[0].main,
+              id: uuidv4(),
             };
           })
         };
