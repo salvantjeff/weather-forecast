@@ -3,7 +3,7 @@ import initWeatherData from '../../../data/initWeatherData';
 import { kelvinToCelsius, kelvinToFahrenheit } from '../../../helper/convert';
 import WeatherIcons from '../../../data/WeatherIcons';
 
-function Weekly({ weatherData }) {
+function Weekly({ weatherData, toCelsius }) {
     let daily = initWeatherData.daily;
     if (weatherData.daily) {
         daily = [...weatherData.daily];

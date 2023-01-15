@@ -98,7 +98,10 @@ function App() {
           toCelsius={toCelsius} 
           toggleUnit={toggleUnit}
         />
-        <Main weatherData={weatherData} />
+        <Main 
+            toCelsius={toCelsius} 
+            weatherData={weatherData} 
+          />
         <Footer />
       </div>
     </div>

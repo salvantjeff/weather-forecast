@@ -5,7 +5,7 @@ import { kelvinToCelsius, kelvinToFahrenheit } from '../../../helper/convert';
 import initWeatherData from '../../../data/initWeatherData';
 import WeatherIcons from '../../../data/WeatherIcons';
 
-function Today({ weatherData }) {
+function Today({ weatherData, toCelsius }) {
     let today = initWeatherData.today;
     if (weatherData.today) {
         today = {...weatherData.today};
@@ -13,11 +13,9 @@ function Today({ weatherData }) {
 
     //if toCelsius is true then use celsius formula
     // const todayTemp = toCelsius ? kelvinToCelsius(today.temp) : kelvinToFahrenheit(today.temp);
-    // const todayTempUnit = toCelsius ? 'C' : 'F';
-    const todayTemp = kelvinToFahrenheit(today.temp);
-    const todayTempUnit = 'F';
-    // const conversionFunc = toCelsius ? kelvinToCelsius : kelvinToFahrenheit;
-    const conversionFunc = kelvinToFahrenheit;
+    // const todayTemp = kelvinToFahrenheit(today.temp);
+    const todayTempUnit = toCelsius ? 'C' : 'F';
+    const conversionFunc = toCelsius ? kelvinToCelsius : kelvinToFahrenheit;
     // console.log('====>', weatherData.today);
 
     console.log('Weather icons: ', WeatherIcons);
