@@ -2,6 +2,7 @@ import './Today.css';
 import CloudSVG from '../../../img/CloudSVG';
 import removeSeconds from '../../../helper/removeSeconds';
 import { kelvinToCelsius, kelvinToFahrenheit } from '../../../helper/convert';
+
 const initWeatherData =  {
     wind: 0,
     description: '',
