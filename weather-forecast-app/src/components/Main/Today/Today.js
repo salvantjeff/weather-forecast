@@ -1,5 +1,6 @@
 import './Today.css';
 import CloudSVG from '../../../img/CloudSVG';
+import removeSeconds from '../../../helper/removeSeconds';
 
 const initWeatherData =  {
     wind: 0,
@@ -21,14 +22,6 @@ function Today({ weatherData }) {
     let today = initWeatherData;
     if (weatherData.today) {
         today = {...weatherData.today};
-    };
-
-    function removeSeconds(string) {
-        const taboo = {4:4, 5:5, 6:6}
-        const splitted = string.split('');
-        const filtered = splitted.filter((curr, i) => !(i in taboo));
-        const joined = filtered.join('');
-        return joined;
     };
 
     function kelvinToFahrenheit(number) {
