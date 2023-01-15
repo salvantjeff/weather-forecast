@@ -11,8 +11,8 @@ function Hourly({ weatherData, toCelsius }) {
         hourly = [...weatherData.hourly];
     };
 
-    // const conversionFunc = toCelsius ? kelvinToCelsius : kelvinToFahrenheit;
-    const conversionFunc = kelvinToFahrenheit;
+    const conversionFunc = toCelsius ? kelvinToCelsius : kelvinToFahrenheit;
+
     return (
         <div className='hourly-section'>
             <div className='hourly-title'>
