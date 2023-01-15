@@ -51,7 +51,7 @@ function Today({ weatherData }) {
                 </div>
                 <div className='today-extra-info'>
                     <p className='today-extra-info-title'>Wind</p>
-                    <p className='today-extra-info-value'>{(today.wind).toFixed(2)} mph</p>
+                    <p className='today-extra-info-value'>{(today.wind * 2.23694).toFixed(2)} mph</p>
                 </div>
                 <div className='today-extra-info'>
                     <p className='today-extra-info-title'>Humidity</p>
