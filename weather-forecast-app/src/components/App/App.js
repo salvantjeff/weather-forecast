@@ -14,7 +14,7 @@ function App() {
   async function getWeatherData(searchValue) {
     displayLoading();
     const key = 'cfd17070df640abcbe367fe0946f9bb4';
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=${key}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=${key}`;
     try {
       const res = await fetch(url, { mode: 'cors' });
       const data = await res.json();
