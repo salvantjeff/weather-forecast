@@ -27,6 +27,8 @@
     gap: .5rem;
     border-radius: .6rem;
     min-width: 100px;
+    width: 115px;
+    height: 115px;
 }
 
 .weekday-details {
