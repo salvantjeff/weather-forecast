@@ -1,10 +1,13 @@
 .weekly-section {
-    background-color: #fff;
+    background-color: var(--daily-bg-color);
+    color: var(--daily-text-color);
     border-radius: .6rem;
     font-size: .875rem;
     overflow-x: auto;
     max-width: 625px;
-    max-height: 300px;
+    padding: 0 1rem 1rem;
+    height: max-content;
+    max-height: 347px;
 }
 
 .weekday-extra-info-wrapper {
@@ -14,18 +17,22 @@
 }
 
 .weekly-title {
-    padding: 1rem;
+    padding: 1rem 0;
     font-weight: 500;
     text-transform: uppercase;
 }
 
 .weekday-extra-info {
-    background-color: rgb(251, 176, 255);
+    /* background-color: rgb(251, 176, 255); */
+    background-color: var(--daily-card-color);
+    color: var(--daily-card-text-color);
     padding: 1rem;
     display: grid;
     gap: .5rem;
     border-radius: .6rem;
     min-width: 100px;
+    width: 115px;
+    height: 115px;
 }
 
 .weekday-details {

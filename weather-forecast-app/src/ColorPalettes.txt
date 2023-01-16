@@ -1,0 +1,104 @@
+1. Design choice 1 
+img: elcarito-MHNjEBeLTgw-unsplash.jpg
+
+fonts:   font-family: 'Josefin Sans', sans-serif;
+
+:root {
+  --header-bg-color: rgb(146, 190, 255);
+  --unit-btn-color: rgb(251, 206, 23);
+  --unit-btn-hover-color: rgb(251, 206, 23);
+  --main-bg-color: white;
+  --today-bg-color: rgba(255, 255, 255, 0.7);
+  --today-weather-bg-color: rgba(146, 237, 255, 1);
+  --toady-extra-info-color: rgb(251, 206, 23);
+  --daily-bg-color: rgba(255, 255, 255, 0.7);
+  --daily-card-color: #ea97ed;
+  --hourly-bg-color: rgba(255, 255, 255, 0.7);
+  --hourly-card-color: rgb(146, 190, 255);
+  --footer-color: white;
+
+  --header-text-color: rgb(0, 0, 0);
+  --unit-btn-text-color: rgb(0, 0, 0);
+  --unit-btn-hover-text-color: rgb(116, 116, 116);
+  --hourly-card-text-color: white;
+  --hourly-text-color: black;
+  --today-text-color: black;
+  --today-weather-text-color: black;
+  --today-extra-info-text-color: #333;
+  --daily-text-color: black;
+  --daily-card-text-color: black;
+  --location-text-color: black;
+
+  --hourly-bd-color: rgba(255, 255, 255, 0.7);
+}
+
+2. Design choice 2
+img: engin-akyurt-gJILnne_HFg-unsplash.jpg
+
+fonts: font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+:root {
+  --header-bg-color: #ccd8e1;
+  --unit-btn-color: rgb(251, 206, 23);
+  --unit-btn-hover-color: rgb(251, 206, 23);
+  --main-bg-color: white;
+  --today-bg-color: rgba(255, 255, 255, 0.7);
+  --today-weather-bg-color: rgba(146, 237, 255, 1);
+  --toady-extra-info-color: rgb(251, 206, 23);
+  --daily-bg-color: rgba(255, 255, 255, 0.7);
+  --daily-card-color: #ea97ed;
+  --hourly-bg-color: rgba(255, 255, 255, 0.7);
+  --hourly-card-color: rgb(146, 190, 255);
+  --footer-color: rgba(255, 255, 255, 0);
+
+  --header-text-color: rgb(0, 0, 0);
+  --unit-btn-text-color: rgb(0, 0, 0);
+  --unit-btn-hover-text-color: rgb(116, 116, 116);
+  --hourly-card-text-color: white;
+  --hourly-text-color: black;
+  --today-text-color: black;
+  --today-weather-text-color: black;
+  --today-extra-info-text-color: #333;
+  --daily-text-color: black;
+  --daily-card-text-color: black;
+  --location-text-color: black;
+
+  --hourly-bd-color: rgba(255, 255, 255, 0.7);
+}
+
+3. Design choice 3
+
+img: zbynek-burival-8iZG31eXkks-unsplash.jpg
+
+fonts: font-family: 'Oxygen', sans-serif;
+
+:root {
+  --header-bg-color: #ccd8e1;
+  --unit-btn-color: rgb(255, 212, 38);
+  --unit-btn-hover-color: rgb(255, 212, 38);
+  --main-bg-color: white;
+  --today-bg-color: rgba(255, 255, 255, 0.7);
+  --today-weather-bg-color: rgba(255, 255, 255, .4);
+  --toady-extra-info-color: rgba(255, 255, 255, .4);
+  --daily-bg-color: rgba(255, 255, 255, 0.7);
+  --daily-card-color: rgba(146, 237, 255, 1);
+  --hourly-bg-color: rgba(255, 255, 255, 0.7);
+  --hourly-card-color: #003c69;
+  --footer-color: rgba(255, 255, 255, 0);
+
+  --header-text-color: rgb(0, 0, 0);
+  --unit-btn-text-color: rgb(0, 0, 0);
+  --unit-btn-hover-text-color: rgb(116, 116, 116);
+  --hourly-card-text-color: white;
+  --hourly-text-color: black;
+  --today-text-color: black;
+  --today-weather-text-color: black;
+  --today-extra-info-text-color: #333;
+  --daily-text-color: black;
+  --daily-card-text-color: black;
+  --location-text-color: black;
+
+  --hourly-bd-color: rgba(255, 255, 255, 0.7);
+}

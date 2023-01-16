@@ -1,6 +1,12 @@
 .header {
-    background-color: rgb(22, 224, 255);
+    background-color: var(--header-bg-color);
     padding: .5rem 1rem;
+    color: var(--header-text-color);
+}
+
+.header-wrapper {
+    max-width: 1000px;
+    margin: auto;
 }
 
 .header-top {
@@ -40,11 +46,17 @@
 }
 
 .toggle-temp-button {
-    background-color: rgba(0, 140, 255, 0.5);
+    background-color: var(--unit-btn-color);
+    color: var(--unit-btn-text-color);
     padding: 5px 10px;
     border-radius: 1rem;
     cursor: pointer;
     width: 75px;
+}
+
+.toggle-temp-button:hover {
+    background-color: var(--unit-btn-hover-color);
+    color: var(--unit-btn-hover-text-color);
 }
 
 .error-title {
