@@ -2,7 +2,13 @@ import CloudSVG from '../../img/CloudSVG';
 import './Header.css';
 import { BsSearch } from 'react-icons/bs';
 
-function Header({ toCelsius, toggleUnit }) {
+function Header({ 
+    toCelsius, 
+    toggleUnit, 
+    searchContent, 
+    onChange,
+    handleSearchSubmit
+}) {
 
     return (
         <header className="header">
@@ -13,16 +19,24 @@ function Header({ toCelsius, toggleUnit }) {
                 <h1>Weather Forecast</h1>
             </div>
             <div className="header-bottom">
-                <form className="search-form">
-                    <input 
-                        type="text"
-                        className="search-bar"
-                        placeholder='Search for location'
-                    />
-                    <div className="search-icon">
-                        <BsSearch />
+                <div className='search-dropdown'>
+                    <form onSubmit={handleSearchSubmit} className="search-form">
+                        <input 
+                            type="text"
+                            className="search-bar"
+                            placeholder='Search for location'
+                            value={searchContent.search}
+                            onChange={onChange}
+                        />
+                        <div className="search-icon">
+                            <BsSearch />
+                        </div>
+                    </form>
+                    <div className='dropdown-error-message'>
+                        <p className='error-title'>Location not found.</p>
+                        <p>Search must be in the form of <strong>"City"</strong>, <strong>"City, State"</strong> or <strong>"City, Country"</strong>.</p>
                     </div>
-                </form>
+                </div>
                 <div 
                     onClick={toggleUnit}
                     className="toggle-temp-button"

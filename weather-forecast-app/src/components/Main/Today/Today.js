@@ -18,7 +18,7 @@ function Today({ weatherData, toCelsius }) {
     const conversionFunc = toCelsius ? kelvinToCelsius : kelvinToFahrenheit;
     // console.log('====>', weatherData.today);
 
-    console.log('Weather icons: ', WeatherIcons);
+    // console.log('Weather icons: ', WeatherIcons);
     return (
         <div className='today-section'>
             <div className='today-heading'>
