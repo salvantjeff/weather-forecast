@@ -121,21 +121,21 @@ function App() {
 
   return (
     <div className="App">
+      <Header 
+        toCelsius={toCelsius} 
+        toggleUnit={toggleUnit}
+        searchContent={searchContent}
+        onChange={handleSearchOnChange}
+        handleSearchSubmit={handleSearchSubmit}
+      />
       <div className="content-wrapper">
-        <Header 
-          toCelsius={toCelsius} 
-          toggleUnit={toggleUnit}
-          searchContent={searchContent}
-          onChange={handleSearchOnChange}
-          handleSearchSubmit={handleSearchSubmit}
-        />
         <Main 
             toCelsius={toCelsius} 
             weatherData={weatherData} 
           />
-        <Footer />
       </div>
       <Loader />
+      <Footer />
     </div>
   );
 }

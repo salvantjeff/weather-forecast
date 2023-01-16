@@ -12,6 +12,7 @@ function Header({
 
     return (
         <header className="header">
+            <div className='header-wrapper'>
             <div className="header-top">
                 <div className="header-icon">
                     <CloudSVG />
@@ -41,6 +42,7 @@ function Header({
                     onClick={toggleUnit}
                     className="toggle-temp-button"
                 >Unit: <strong>{toCelsius ? '°C' : '°F'}</strong></div>
+            </div>
             </div>
         </header>
     );

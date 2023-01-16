@@ -4,6 +4,11 @@
     color: var(--header-text-color);
 }
 
+.header-wrapper {
+    max-width: 1000px;
+    margin: auto;
+}
+
 .header-top {
     display: flex;
     align-items: center;
