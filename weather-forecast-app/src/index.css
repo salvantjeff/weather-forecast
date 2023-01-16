@@ -1,3 +1,29 @@
+:root {
+  --header-bg-color: #3a0ca3;
+  --unit-btn-color: #f72585;
+  --unit-btn-hover-color: black;
+  --main-bg-color: #4cc9f0;
+  --today-bg-color: white;
+  --today-weather-bg-color: rgb(146, 190, 255);
+  --toady-extra-info-color: rgb(255, 190, 121);
+  --daily-bg-color: white;
+  --daily-card-color: #f72585;
+  --hourly-bg-color: white;
+  --hourly-card-color: #4361ee;
+  --footer-color: #4895ef;
+
+  --header-text-color: white;
+  --unit-btn-text-color: rgb(3, 255, 20);
+  --unit-btn-hover-text-color: rgb(144, 171, 240);
+  --hourly-card-text-color: white;
+  --hourly-text-color: blue;
+  --today-text-color: black;
+  --today-weather-text-color: black;
+  --today-extra-info-text-color: #333;
+  --daily-text-color: rgb(255, 8, 8);
+  --daily-card-text-color: rgb(13, 183, 118);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

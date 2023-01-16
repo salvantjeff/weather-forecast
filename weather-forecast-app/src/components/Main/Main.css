@@ -1,7 +1,6 @@
 .main-section {
-    background-color: rgb(197, 255, 184);
     padding: .25rem 1rem 2rem;
-    background-color: rgb(195, 169, 223);
+    background-color: var(--main-bg-color);
 }
 
 .location-content {
@@ -13,7 +12,6 @@
 
 .main-content {
     display: grid;
-    background-color: aqua;
     gap: 1rem;
 }
 
