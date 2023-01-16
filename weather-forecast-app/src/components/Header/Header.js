@@ -40,7 +40,7 @@ function Header({
                 <div 
                     onClick={toggleUnit}
                     className="toggle-temp-button"
-                >Unit: {toCelsius ? '°C' : '°F'}</div>
+                >Unit: <strong>{toCelsius ? '°C' : '°F'}</strong></div>
             </div>
         </header>
     );
