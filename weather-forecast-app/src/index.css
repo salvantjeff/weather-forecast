@@ -1,27 +1,28 @@
 :root {
-  --header-bg-color: #3a0ca3;
-  --unit-btn-color: #f72585;
-  --unit-btn-hover-color: black;
-  --main-bg-color: #4cc9f0;
-  --today-bg-color: white;
-  --today-weather-bg-color: rgb(146, 190, 255);
-  --toady-extra-info-color: rgb(255, 190, 121);
-  --daily-bg-color: white;
-  --daily-card-color: #f72585;
-  --hourly-bg-color: white;
-  --hourly-card-color: #4361ee;
-  --footer-color: #4895ef;
+  --header-bg-color: #ccd8e1;
+  --unit-btn-color: rgb(255, 212, 38);
+  --unit-btn-hover-color: rgb(255, 212, 38);
+  --main-bg-color: white;
+  --today-bg-color: rgba(255, 255, 255, 0.7);
+  --today-weather-bg-color: rgba(255, 255, 255, .4);
+  --toady-extra-info-color: rgba(255, 255, 255, .4);
+  --daily-bg-color: rgba(255, 255, 255, 0.7);
+  --daily-card-color: rgba(146, 237, 255, 1);
+  --hourly-bg-color: rgba(255, 255, 255, 0.7);
+  --hourly-card-color: #003c69;
+  --footer-color: rgba(255, 255, 255, 0);
 
-  --header-text-color: white;
-  --unit-btn-text-color: rgb(3, 255, 20);
-  --unit-btn-hover-text-color: rgb(144, 171, 240);
+  --header-text-color: rgb(0, 0, 0);
+  --unit-btn-text-color: rgb(0, 0, 0);
+  --unit-btn-hover-text-color: rgb(116, 116, 116);
   --hourly-card-text-color: white;
-  --hourly-text-color: blue;
+  --hourly-text-color: black;
   --today-text-color: black;
   --today-weather-text-color: black;
   --today-extra-info-text-color: #333;
-  --daily-text-color: rgb(255, 8, 8);
-  --daily-card-text-color: rgb(13, 183, 118);
+  --daily-text-color: black;
+  --daily-card-text-color: black;
+  --location-text-color: black;
 }
 
 body {

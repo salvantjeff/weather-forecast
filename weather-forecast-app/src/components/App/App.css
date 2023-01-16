@@ -20,3 +20,9 @@ img {
     width: 100%;
     height: 100%;
 }
+
+.App {
+    background-image: url('../../img/zbynek-burival-8iZG31eXkks-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
