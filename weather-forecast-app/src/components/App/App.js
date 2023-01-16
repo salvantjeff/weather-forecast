@@ -8,6 +8,7 @@ import removeSeconds from '../../helper/removeSeconds';
 import { v4 as uuidv4 } from 'uuid';
 import Loader from '../Loader/Loader';
 import { displayLoading, removeLoading } from '../../helper/LoadingStatus';
+import { hideErrorDropdown, showErrorDropdown } from '../../helper/ErrorMessageDropdown';
 
 function App() {
   const [weatherData, setWeatherData] = useState({});
@@ -29,6 +30,7 @@ function App() {
       const completeRes = await fetch(url_complete, { mode: 'cors' });
       const OpenWeatherData = await completeRes.json();
       removeLoading();
+      hideErrorDropdown();
       const dataProcessed = {
         today: {
           wind: data.wind.speed,
@@ -84,6 +86,7 @@ function App() {
     } catch (error) {
       console.log(error);
       removeLoading();
+      showErrorDropdown();
     };
   };
   useEffect(() => {
