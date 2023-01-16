@@ -8,6 +8,7 @@
     padding: 0 1rem 1rem;
     height: max-content;
     max-height: 347px;
+    min-width: 300px;
 }
 
 .weekday-extra-info-wrapper {
