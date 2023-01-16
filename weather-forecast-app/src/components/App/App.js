@@ -3,7 +3,7 @@ import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
 import { useEffect, useState } from 'react';
-import OpenWeatherData from '../../data/OpenWeatherData';
+// import OpenWeatherData from '../../data/OpenWeatherData';
 import removeSeconds from '../../helper/removeSeconds';
 import { v4 as uuidv4 } from 'uuid';
 import Loader from '../Loader/Loader';
@@ -23,11 +23,11 @@ function App() {
         lat: data.coord.lat,
         lon: data.coord.lon,
       };
-      // const url_complete = `https://api.openweathermap.org/data/3.0/onecall?lat=${coord.lat}&lon=${coord.lon}&appid=${key}`; 
-      // const completeRes = await fetch(url_complete, { mode: 'cors' });
-      // const OpenWeatherData = await completeRes.json();
       // Note to self: currently using an earlier copy of OpenWeatherData to save api calls
       // just swap them when ready to make calls;
+      const url_complete = `https://api.openweathermap.org/data/3.0/onecall?lat=${coord.lat}&lon=${coord.lon}&appid=${key}`; 
+      const completeRes = await fetch(url_complete, { mode: 'cors' });
+      const OpenWeatherData = await completeRes.json();
       removeLoading();
       const dataProcessed = {
         today: {
