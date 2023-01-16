@@ -4,9 +4,11 @@
     font-size: .875rem;
     overflow-x: auto;
     max-width: 625px;
+    /* max-height: 347px; */
+    /* min-height: 263px; */
+    padding: 0 1rem 1rem;
+    height: max-content;
     max-height: 347px;
-    min-height: 263px;
-    padding: 0 1rem;
 }
 
 .weekday-extra-info-wrapper {
