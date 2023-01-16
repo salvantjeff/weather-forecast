@@ -1,6 +1,8 @@
 1. Design choice 1 
 img: elcarito-MHNjEBeLTgw-unsplash.jpg
 
+fonts:   font-family: 'Josefin Sans', sans-serif;
+
 :root {
   --header-bg-color: rgb(146, 190, 255);
   --unit-btn-color: rgb(251, 206, 23);
@@ -26,10 +28,16 @@ img: elcarito-MHNjEBeLTgw-unsplash.jpg
   --daily-text-color: black;
   --daily-card-text-color: black;
   --location-text-color: black;
+
+  --hourly-bd-color: rgba(255, 255, 255, 0.7);
 }
 
 2. Design choice 2
 img: engin-akyurt-gJILnne_HFg-unsplash.jpg
+
+fonts: font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 
 :root {
   --header-bg-color: #ccd8e1;
@@ -43,7 +51,7 @@ img: engin-akyurt-gJILnne_HFg-unsplash.jpg
   --daily-card-color: #ea97ed;
   --hourly-bg-color: rgba(255, 255, 255, 0.7);
   --hourly-card-color: rgb(146, 190, 255);
-  --footer-color: white;
+  --footer-color: rgba(255, 255, 255, 0);
 
   --header-text-color: rgb(0, 0, 0);
   --unit-btn-text-color: rgb(0, 0, 0);
@@ -56,11 +64,15 @@ img: engin-akyurt-gJILnne_HFg-unsplash.jpg
   --daily-text-color: black;
   --daily-card-text-color: black;
   --location-text-color: black;
+
+  --hourly-bd-color: rgba(255, 255, 255, 0.7);
 }
 
 3. Design choice 3
 
 img: zbynek-burival-8iZG31eXkks-unsplash.jpg
+
+fonts: font-family: 'Oxygen', sans-serif;
 
 :root {
   --header-bg-color: #ccd8e1;
@@ -87,4 +99,6 @@ img: zbynek-burival-8iZG31eXkks-unsplash.jpg
   --daily-text-color: black;
   --daily-card-text-color: black;
   --location-text-color: black;
+
+  --hourly-bd-color: rgba(255, 255, 255, 0.7);
 }
