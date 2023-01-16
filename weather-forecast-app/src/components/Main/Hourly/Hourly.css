@@ -4,7 +4,7 @@
     font-size: .875rem;
     max-width: 625px;
     overflow-x: auto;
-    padding: 0 1rem;
+    padding: 0 1rem 1rem;
 }
 
 .hourly-title {
