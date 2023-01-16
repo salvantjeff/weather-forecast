@@ -6,10 +6,13 @@ import { useEffect, useState } from 'react';
 import OpenWeatherData from '../../data/OpenWeatherData';
 import removeSeconds from '../../helper/removeSeconds';
 import { v4 as uuidv4 } from 'uuid';
+import Loader from '../Loader/Loader';
+import { displayLoading, removeLoading } from '../../helper/LoadingStatus';
 
 function App() {
   const [weatherData, setWeatherData] = useState({});
   async function getWeatherData(searchValue) {
+    displayLoading();
     const key = 'cfd17070df640abcbe367fe0946f9bb4';
     const url = `http://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=${key}`;
     try {
@@ -25,7 +28,7 @@ function App() {
       // const OpenWeatherData = await completeRes.json();
       // Note to self: currently using an earlier copy of OpenWeatherData to save api calls
       // just swap them when ready to make calls;
-      document.body.classList.remove('activeErrorDropdown');
+      removeLoading();
       const dataProcessed = {
         today: {
           wind: data.wind.speed,
@@ -80,7 +83,7 @@ function App() {
       setWeatherData(dataProcessed);
     } catch (error) {
       console.log(error);
-      document.body.classList.add('activeErrorDropdown');
+      removeLoading();
     };
   };
   useEffect(() => {
@@ -132,6 +135,7 @@ function App() {
           />
         <Footer />
       </div>
+      <Loader />
     </div>
   );
 }
