@@ -1,4 +1,0 @@
-1. Persisting data - https://blog.bitsrc.io/5-methods-to-persisting-state-between-page-reloads-in-react-8fc9abd3fa2f
-2. Add slider functionality instead of horizontal scroll
-3. Have background image change corresponding to the weather description
-4. hourly cards clickable to expand and display more information -> https://www.msn.com/en-us/weather
