@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/weather-forecast/static/css/main.d5024b89.css",
+    "main.js": "/weather-forecast/static/js/main.6c944754.js",
+    "static/media/zbynek-burival-8iZG31eXkks-unsplash.jpg": "/weather-forecast/static/media/zbynek-burival-8iZG31eXkks-unsplash.ee068d9bcd616fb2a779.jpg",
+    "static/media/rain.png": "/weather-forecast/static/media/rain.4cf00c54b52122e8ffce.png",
+    "static/media/snowy.png": "/weather-forecast/static/media/snowy.36d4de6f0683a632293b.png",
+    "static/media/few_clouds.png": "/weather-forecast/static/media/few_clouds.fad4c622f66b1845697f.png",
+    "static/media/thunderstorm.png": "/weather-forecast/static/media/thunderstorm.33da556726646427e9af.png",
+    "static/media/broken_clouds.png": "/weather-forecast/static/media/broken_clouds.d1cf7c9ba88643df4468.png",
+    "static/media/shower_rain.png": "/weather-forecast/static/media/shower_rain.a79eaa8d05156297e066.png",
+    "static/media/scattered_clouds.png": "/weather-forecast/static/media/scattered_clouds.d5501ab2ab9be56d9e8c.png",
+    "static/media/snow.png": "/weather-forecast/static/media/snow.9295f5090482f9299c47.png",
+    "static/media/clear_sky.png": "/weather-forecast/static/media/clear_sky.e7152756c38c458b12ed.png",
+    "index.html": "/weather-forecast/index.html",
+    "main.d5024b89.css.map": "/weather-forecast/static/css/main.d5024b89.css.map",
+    "main.6c944754.js.map": "/weather-forecast/static/js/main.6c944754.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5024b89.css",
+    "static/js/main.6c944754.js"
+  ]
+}
